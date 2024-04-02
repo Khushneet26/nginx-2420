@@ -1,0 +1,12 @@
+
+server {
+    listen 80;
+    server_name 143.198.155.245;
+
+    root /web/html/nginx-2420;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
